@@ -1,0 +1,321 @@
+body {
+  background: #EAEEF1;
+}
+
+.logoleftt{
+  text-align: center;
+  position: relative;
+  padding :  17px 0 39px;
+
+}
+
+.logoleftt img:nth-child(2){
+  margin-top: 10px;
+}
+
+
+
+
+.hideScrollCon{
+  width: 194px;
+  /* width: 224px; */
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  overflow:hidden;
+  z-index: 101;
+  border-right: 1px solid #d8dde3;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background:url('./images/menubg.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  /* background-position:left; */
+  /* background: url(./images/menubg.png) no-repeat  top; */
+  /* background-size: contain; */
+}
+.el-menu-box {
+  height: calc(100% - 122px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  /*background: #3d99fd;*/
+}
+
+.hideScrollCon.onclick{
+  width: 0px;
+}
+
+.el-menu-hover {
+  overflow: visible;
+}
+
+.el-menu-box [class*=" el-icon-"], .el-menu-box [class^=el-icon-] {
+  -webkit-transition: all .1s ease-out 0s;
+  transition: all .1s ease-out 0s;
+}
+
+
+.el-router-view {
+  position: absolute;
+  padding: 10px;
+  overflow: auto;
+  background: red;
+  top: 80px;
+  left: 215px;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #d8dde3;
+  margin-right: 10px;
+  margin-bottom: 28px;
+  z-index: 1003;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.el-router-view.onclick{
+  left: 0px;
+  margin-right: 0!important;
+}
+
+.cloud-header.onclick {
+  margin-left: 0!important;
+}
+
+.el-menu-icon {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  margin: 0 4px 3px 3px;
+  vertical-align: middle;
+}
+
+.route-menu {
+  height: 40px;
+  min-width:650px;
+  margin: 0 0 0 223px;
+  overflow: hidden;
+  z-index: 1004;
+  position: relative;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.route-menu.onclick{
+  margin: 0 0 0 0px;
+}
+
+.route-menu .el-tag {
+  position: relative;
+  text-align: center;
+  float: left;
+  height: 35px;
+  line-height: 34px;
+  color: #787878;
+  text-align: center;
+  font-size: 13px;
+  transition: all .2s;
+  min-width: 188px;
+  background: url("./images/tag_bg.png") center 0 no-repeat;
+  background-size: cover;
+  padding: 0 28px 0 20px;
+  border: none !important;
+  cursor: pointer;
+}
+
+.route-menu .el-tag:not(:first-child){
+  margin-left: -10px;
+}
+
+.route-menu .el-tag:hover{
+  color: #3d99fd;
+}
+
+.route-menu .route-menu-button-close {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px!important;
+  text-align: center;
+  padding: 0 0;
+  margin-right: 4px !important;
+}
+
+.route-menu .route-menu-button-left {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px 0 0 4px!important;
+  text-align: center;
+  padding: 0 0;
+  margin-right: 4px !important;
+}
+
+.route-menu .route-menu-button-right {
+  width: 26px;
+  height: 26px;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+  padding: 0 0;
+}
+
+.route-menu .disabled {
+  background: #d9dee3;
+  color: #babcbe;
+  border: 1px solid #d9dee3;
+  cursor: not-allowed
+}
+
+.route-menu .disabled:hover {
+  background: #d9dee3;
+  color: #babcbe;
+  border: 1px solid #d9dee3;
+  cursor: not-allowed
+}
+
+.route-menu .el-tag .el-icon-close {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -ms-transform: translateY(-50%) scale(.75, .75);
+  transform: translateY(-50%) scale(.75, .75);
+  -webkit-transition: all 0s ease-out 0s;
+  transition: all 0s ease-out 0s;
+}
+
+.route-menu .el-tag:hover {
+  border: 1px solid #BBE2D8;
+  text-decoration: underline;
+}
+
+.route-menu .el-tag.on, .route-menu .el-tag.on:hover {
+  color: #3d99fd !important;
+  /*font-weight: 700;*/
+  border: none !important;
+  background: url("./images/tag_bg1.png") center 0 no-repeat;
+  background-size: cover;
+  z-index: 1000;
+}
+
+.on{
+  color: #ffffff !important;
+  /*font-weight: 700;*/
+  border: none !important;
+  background-color: #3d99fd;
+}
+
+.on:hover{
+  color: #3d99fd !important;
+}
+
+.on .el-dropdown-link{
+  color: #3d99fd !important;
+}
+
+.route-menu .el-tag label {
+  cursor: pointer;
+}
+.route-menu .el-dropdown{
+  width:100%;
+}
+.route-menu .el-dropdown label{
+  width:100%;
+  height: 100%;
+  display: inline-block;
+  outline: none;
+}
+
+.el-dropdown-menu{
+  text-align: center;
+  min-width:170px !important;
+}
+
+.el-dropdown-menu .el-icon-close{
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  -ms-transform: translateY(-50%) scale(.75, .75);
+  transform: translateY(-50%) scale(.75, .75);
+  -webkit-transition: all 0s ease-out 0s;
+  transition: all 0s ease-out 0s;
+}
+.el-dropdown-menu__item{
+  position: relative;
+  outline: none;
+}
+.el-dropdown-menu__item label{
+  display: inline-block;
+  width:100%;
+  height: 100%;
+}
+
+.el-router-container {
+  /*min-width: 1100px;*/
+  /*屏幕最小宽度1250*/
+  min-width: 1045px;
+  padding: 10px 0 0 0;
+}
+
+.el-form-item-small .el-form-item {
+  margin-bottom: 10px
+}
+
+
+.dislpayArrow {
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: fixed;
+  top: 18px;
+  bottom: 0;
+  left: 215px;
+  width: 20px;
+  height: 18px;
+  z-index: 1004;
+  cursor: pointer;
+  outline: none;
+  background: url(./images/icon_arrow2.png) no-repeat -1px 0;
+  background-size: contain;
+}
+
+.dislpayArrow.onclick {
+  background: url(./images/icon_arrow2.png) no-repeat -1px 0;
+  background-size: contain;
+  /* background: red; */
+  outline: none;
+  position: fixed;
+  display: block;
+  width: 20px;
+  height: 18px;
+  top: 18px;
+  bottom: 0;
+  left: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.el-menu-box .el-menu .el-menu-item{ border-left: 4px solid rgba(0,0,0,0); }
+.el-menu-box .el-menu .el-menu-item.is-active{
+  background: #fff;
+  color:#3d99fd; border-left: 4px solid #3D99FD;
+}
+
+
+.el-menu-box .el-menu .el-submenu .el-submenu__title{
+  padding-left: 19px !important;
+}
+
+.el-menu-box .el-submenu .el-menu-item{
+color: #fff;  padding-left: 48px!important;
+}

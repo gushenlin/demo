@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+*.war
+num-debug.*
+.idea/
+docker/
+build/
+config/
+.git/
+static/
+XXXX项目相关文件/

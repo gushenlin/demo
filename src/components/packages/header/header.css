@@ -1,0 +1,126 @@
+  /*-----------------------------头部-----------------------------*/
+.cloud-header {
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 194px;
+  min-width: 579px;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #fff;
+}
+
+.cloud-header-logo {
+  float: left;
+  padding-left: 70px;
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.cloud-header-logo img {
+  vertical-align: middle;
+  text-shadow: rgb(0, 179, 133) 1px 1px 5px;
+  width: 70px;
+}
+
+.cloud-header-logo .head-title {
+  font-size: 18px;
+  /* margin-left: 10px; */
+  /* padding-left: 10px; */
+  /* border-left: 2px solid #bdbdbd; */
+  color: #252525;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 微软雅黑;
+}
+
+.cloud-header-info {
+  float: right;
+  /*width: 300px;*/
+  padding-right: 15px;
+  padding-top: 12px;
+  color: #666666;
+  font-size: 14px;
+}
+.cloud-header-info > div{position:relative;}
+
+.cloud-header-info .welcomeText, .cloud-header-info .logout {
+  float: left
+}
+
+.cloud-header-info .welcomeText:before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;vertical-align: middle;
+  background: url("./images/admin.png") no-repeat center;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.cloud-header-info .logout {
+  cursor: pointer;
+  margin-left: 32px;
+  padding-left: 54px;line-height: 32px;
+  border-left: 1px dashed #d4d4d4;
+}
+.cloud-header-info .changpass {
+  border-left: 0;
+}
+
+.cloud-header-info .logout:hover {
+  color:#81BDFE;
+}
+.cloud-header-info .logout:active {
+  color:#277DDB;
+}
+
+.cloud-header-info .changpass {
+  cursor: pointer;
+  margin-left: 32px;
+  padding-left: 34px;line-height: 32px;
+}
+.cloud-header-info .logout:before {
+  content: '';    position: absolute;
+    left: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("./images/logout.png") no-repeat center;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.cloud-header-info .logout.changpass:before {    position: absolute;
+    left: 0;
+  background: url("./images/pass.png") no-repeat center;
+}
+.cloud-header-info .logout:hover:before{
+  background-image: url('./images/logout2.png');
+}
+.cloud-header-info .logout.changpass:hover:before {
+  background-image: url('./images/pass2.png');
+}
+/* 导航 */
+/*.navlist{margin-left: 250px;float: left;border-right: 1px solid #51b5ed;}*/
+/*.navlist li{float: left;height: 66px;line-height: 66px;color: #fff;border-left: 1px solid #51b5ed;padding: 0 20px;cursor: pointer;}*/
+/*.navlist li.current{background: #138ed4;}*/
+/*.navlist li .text{float: left;display: inline-block;line-height: 66px;margin-left: 10px;font-size: 16px;}*/
+/*.navlist .navicon.icon1{background-position: 0px 0;}*/
+/*.navlist .navicon.icon2{background-position: -62px 0;}*/
+/*.navlist .navicon.icon3{background-position: -122px 0;}*/
+/*.navlist .navicon.icon4{background-position: -184px 0;}*/
+
+/* 确认弹出框*/
+.el-message-box__message {
+  padding-left: 40px;
+}
